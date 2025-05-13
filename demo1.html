@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+     <title> Speech emotion detection </title>
+     <link rel="stylesheet" href="s.css">
+     <link rel="stylesheet" href="
+<head>
+    <body> 
+        <div id="loader-overlay">
+            <div class="preloader" id="loader">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img1.png);">
+        <div class="bradcumbContent">
+            <p>Speech</p>
+            <h2>Emotion Recognition</h2>
+        </div>
+    </section>
+        <section class="login-area section-padding-100">
+        <div class="container">
+            <div class="col-lg-10 col-12 text-center mx-auto mb-5">
+                <h2>Upload Audio <u class="text-info"></u></h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-12 mx-auto">
+                    <form  action="/submit" method="POST" enctype="multipart/form-data" >
+                        <div class="row">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+         <script>
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                document.getElementById("loader-overlay").style.display = "none";
+            }, 1500);
+        });
+        </script>
+    </body>

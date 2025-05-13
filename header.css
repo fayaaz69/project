@@ -1,0 +1,17 @@
+.header-area {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 0; 
+    margin: 5px;
+    padding: 4px;
+
+
+}
+a{
+    padding:2px;text-decoration: none;
+    margin-right: 50px;
+    color: #45f3ff;
+}

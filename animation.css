@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.text-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40%;
+  }
+  
+  .text-layer {
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Top Text - static */
+  .top-text {
+    z-index: 2;
+    color: white;
+  }
+  
+  /* Bottom Text - zoom animation */
+  .middle-text {
+    z-index: 1;
+    color: white;
+    animation: zoomInOut 3s ease-in-out infinite;
+  }
+  .bottom-text{
+    z-index: 2;
+    color: white;
+    top: 2px;
+  }
+  
+  @keyframes zoomInOut {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.4;
+    }
+  }
